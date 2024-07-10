@@ -1,11 +1,10 @@
-#!/bin/bash
-
 # Nome do arquivo txt com as URLs
-arquivo_urls="$1"
+webserver=$1
+arquivo_urls="urls.txt"
 
 # Verificando se o arquivo foi passado como argumento
-if [ -z "$arquivo_urls" ]; then
-  echo "Erro: Informe o nome do arquivo txt com as URLs como argumento."
+if [ ! -z "$arquivo_urls" ]; then
+  echo "Erro: Arquivo urls.txt inexistente."
   exit 1
 fi
 
@@ -28,11 +27,11 @@ while IFS= read -r url; do
   # Comparando os IPs
   if [ "$ip_local" = "$ip_destino" ]; then
     # URL aponta para o IP local
-    echo "$url" >> urls_corretas.txt
+    echo "$url" >> urls_corretas_$webserver.txt
     contador_corretas=$((contador_corretas + 1))
   else
     # URL não aponta para o IP local
-    echo "$url" >> urls_erradas.txt
+    echo "$url" >> urls_erradas_$webserver.txt
     contador_erradas=$((contador_erradas + 1))
   fi
 
@@ -45,4 +44,3 @@ echo "Verificação concluída!"
 echo "Total de URLs: $contador_total"
 echo "URLs corretas (salvas em urls_corretas.txt): $contador_corretas"
 echo "URLs erradas (salvas em urls_erradas.txt): $contador_erradas"
-
