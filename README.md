@@ -13,7 +13,7 @@ check_active_urls.sh
 
 A saída do script será:
 
-Arquivo **urls_corretas_nginx.txt** cotendo todas as URLs que estão ativas no NGINX e o IP apontado pra URL é realmente o do servidor em questão.
-Arquivo **urls_erradas_nginx.txt** cotendo todas as URLs que estão ativas no NGINX e o IP apontado pra URL NÃO É PARA O SERVIDOR EM QUESTÃO.
-Arquivo **urls_corretas_httpd.txt** cotendo todas as URLs que estão ativas no HTTPD e o IP apontado pra URL é realmente o do servidor em questão.
-Arquivo **urls_erradas_httpd.txt** cotendo todas as URLs que estão ativas no HTTPD e o IP apontado pra URL NÃO É PARA O SERVIDOR EM QUESTÃO.
+- Arquivo **urls_corretas_nginx.txt** cotendo todas as URLs que estão ativas no NGINX e o IP apontado pra URL é realmente o do servidor em questão.
+- Arquivo **urls_erradas_nginx.txt** cotendo todas as URLs que estão ativas no NGINX e o IP apontado pra URL NÃO É PARA O SERVIDOR EM QUESTÃO.
+- Arquivo **urls_corretas_httpd.txt** cotendo todas as URLs que estão ativas no HTTPD e o IP apontado pra URL é realmente o do servidor em questão.
+- Arquivo **urls_erradas_httpd.txt** cotendo todas as URLs que estão ativas no HTTPD e o IP apontado pra URL NÃO É PARA O SERVIDOR EM QUESTÃO.
