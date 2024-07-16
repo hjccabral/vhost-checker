@@ -8,7 +8,7 @@ Para chamar o script:
 2. Chame o script através do comando:
 
 ```
-script_modularizado.sh
+check_active_urls.sh
 ```
 
 A saída do script será:

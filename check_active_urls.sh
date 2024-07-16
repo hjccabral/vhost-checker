@@ -3,27 +3,27 @@
 # Função para executar o script01.sh
 executar_check_url_httpd() {
   echo "Executando httpd.sh..."
-  bash httpd.sh
+  bash modules/httpd.sh
 }
 
 # Função para executar o script01.sh
 executar_verify_urls_httpd() {
-  echo "Executando verify_urls.sh..."
+  echo "Executando urls.sh with variable httpd..."
   webserver="httpd"
-  bash verify_urls.sh "$webserver"
+  bash modules/urls.sh "$webserver"
 }
 
 # Função para executar o script01.sh
 executar_check_url_nginx() {
-  echo "Executando nginx.sh..."
-  bash nginx.sh 
+  echo "Executando nginx.sh with variable nginx..."
+  bash modules/nginx.sh 
 }
 
 # Função para executar o script01.sh
 executar_verify_urls_nginx() {
-  echo "Executando verify_urls.sh..."
+  echo "Executando urls.sh..."
   webserver="nginx"
-  bash verify_urls.sh "$webserver"
+  bash modules/urls.sh "$webserver"
 }
 
 # Chamada das funções
